@@ -17,3 +17,14 @@ while saldo>0:
         aposta = int(input('Quanto?:'))
         print('Fase 1 : Comecando Come Out')
         tipos_de_apostas = str(input('qual sera o tipo de aposta:'))
+        if tipos_de_apostas == 'Pass Line Bet':
+            a = randint(1,6)
+            b = randint(1,6)
+            soma = a+b
+            print('soma:',soma)
+            if soma==7 or soma==11:
+                print('ganhou!')
+                saldo = saldo + aposta
+                print('seu novo saldo é de :',saldo)
+            elif soma==2 or soma==3 or soma==12:
+        
