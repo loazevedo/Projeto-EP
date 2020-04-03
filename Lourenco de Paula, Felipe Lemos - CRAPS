@@ -53,4 +53,21 @@ while saldo>0:
                         elif w==7:
                             print('Você perdeu tudo')
                             print(w)
-                            break                                            
+                            break
+        if tipos_de_apostas == 'Field':
+             a = randint(1,6)
+             b = randint(1,6)
+             soma = a+b
+             print('soma:',soma)
+             if soma==5 or soma==6 or soma==7 or soma==8:
+                 saldo = 0
+                 print('Perdeu tudo!','saldo atual de :',saldo)
+             elif soma==3 or soma==4 or soma==9 or soma==10 or soma==11:
+                 saldo = saldo + aposta
+                 print('Ganhou!'/'saldo atual de:',saldo)
+             elif soma==2:
+                 saldo = saldo + aposta*2
+                 print('Ganhou em dobro!','saldo atual de :',saldo)
+             else:
+                 saldo = saldo + aposta*3
+                 print('Ganhou em triplo!','saldo atual de :',saldo) 
