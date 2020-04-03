@@ -8,3 +8,12 @@ saldo = int(input('Quanto de saldo: '))
 i=0
 rodada = [0]*15
 rodada[0] = 0
+while saldo>0:
+    rodada[i+1] = rodada[i]+1
+    i+=1
+    print("rodada{0}".format(rodada[i]))
+    n = str(input('Aposta ou sai do jogo? '))
+    if n == 'aposto':
+        aposta = int(input('Quanto?:'))
+        print('Fase 1 : Comecando Come Out')
+        tipos_de_apostas = str(input('qual sera o tipo de aposta:'))
