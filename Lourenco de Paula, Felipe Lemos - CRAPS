@@ -38,3 +38,19 @@ while saldo>0:
                 print('soma:',c)
                 if soma==c:
                     print('Você recebeu {0} fichas'.format(aposta))
+                elif c==7:
+                    print('Você perdeu tudo')
+                else:
+                    dados_nao_iguais = True
+                    while dados_nao_iguais:
+                        print(randint(2,12))
+                        w = randint(2,12)
+                       
+                        if soma==w:
+                            print('Você recebeu {0} fichas'.format(aposta))
+                            print(w)
+                            break
+                        elif w==7:
+                            print('Você perdeu tudo')
+                            print(w)
+                            break                                            
