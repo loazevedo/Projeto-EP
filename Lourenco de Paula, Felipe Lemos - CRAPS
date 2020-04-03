@@ -1,0 +1,10 @@
+print('Bem Vindo ao Craps!')
+print('Neste jogo uma rodada pode ter duas fases')
+print('Apostas da fase 1:Pass Line Bet, Field, Any Craps, Twelve')
+print('Apostas da fase2: Field, Any Craps, Twelve')
+print('Bom Jogo e Boa sorte!')
+from random import randint
+saldo = int(input('Quanto de saldo: '))
+i=0
+rodada = [0]*15
+rodada[0] = 0
