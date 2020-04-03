@@ -27,4 +27,14 @@ while saldo>0:
                 saldo = saldo + aposta
                 print('seu novo saldo é de :',saldo)
             elif soma==2 or soma==3 or soma==12:
-        
+                saldo = saldo - aposta
+                print('Craps!','saldo atual de :',saldo)
+            else:
+                print('Entrou na fase Point')
+                print('Jogando os dados novamente...')
+                x = randint(1,6)
+                y = randint(1,6)
+                c = x + y
+                print('soma:',c)
+                if soma==c:
+                    print('Você recebeu {0} fichas'.format(aposta))
