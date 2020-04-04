@@ -82,3 +82,17 @@ while saldo>0:
             else:
                 saldo = saldo - aposta
                 print('Perdeu','saldo atual de :',saldo)  
+        if tipos_de_apostas == 'Twelve':
+            a = randint(1,6)
+            b = randint(1,6)
+            soma = a+b
+            print('soma:',soma)
+            if soma==12:
+                saldo = saldo + aposta*12
+                print('Ganhou','saldo atual de :',saldo)
+            else:
+                saldo = saldo - aposta
+                print('Perdeu','saldo atual de :',saldo)
+    else:
+        print('Fim do jogo')
+        break 
