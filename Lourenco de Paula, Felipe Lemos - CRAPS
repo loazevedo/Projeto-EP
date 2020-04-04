@@ -71,3 +71,14 @@ while saldo>0:
              else:
                  saldo = saldo + aposta*3
                  print('Ganhou em triplo!','saldo atual de :',saldo) 
+        if tipos_de_apostas == 'Any Craps':
+            a = randint(1,6)
+            b = randint(1,6)
+            soma = a+b
+            print('soma:',soma)
+            if soma==2 or soma==3 or soma==12:
+                saldo = saldo + aposta*7
+                print('Ganhou em 7vezes','saldo atual de :',saldo)
+            else:
+                saldo = saldo - aposta
+                print('Perdeu','saldo atual de :',saldo)  
